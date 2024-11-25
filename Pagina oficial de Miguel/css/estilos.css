@@ -1,50 +1,76 @@
 img {
-    width: 200px;
-    height: 200px;
-    z-index: 3;
+  width: 200px; /*imagen principal de mi*/
+  height: 200px;
+  z-index: 3;
 }
 body {
-    background-image: url(/imagenes/fondo.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -1;
+  background-image: url(/imagenes/fondo.jpg); /*imagen de fondo principala*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
-body::before{
-    content: "";
-    position: absolute;
-    top: 100px; /* Ajusta la posición según sea necesario */
-    left: 50%; /* Ajusta la posición según sea necesario */
-    transform: translateX(-50%);
-    width: 800px; /* Ajusta el ancho según sea necesario */
-    height: 600px; /* Ajusta el alto según sea necesario */
-    background-image: url('/imagenes/subFondo.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -2;
+body::before {
+  /*trasfondo*/
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 1800px;
+  background-image: url("/imagenes/subFondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
 }
 body {
-    text-align: center;
-    margin-top: 130px;
-    color: #B0B0B0;
-    
-    z-index: 3;
+  text-align: center; /*textos*/
+  margin-top: 130px;
+  color: #b0b0b0;
 
-  }
-  .boton {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .boton:hover {
-    background-color: #3e8e41;
-  }
-  
-  #informacion {
-    margin-top: 20px;
-  }
+  z-index: 3;
+}
+.boton {
+  background-color: #3b3838; /*botones*/
+  color: #b0b0b0;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  width: 50%;
+}
+
+.boton:hover {
+  background-color: #480c80;
+}
+
+#informacion {
+  margin-top: 20px;
+}
+
+#lista-informacion {
+  max-width: 30rem;
+  margin: auto;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 50%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+#footer a {
+  margin: 10px;
+}
+
+#footer img {
+  width: 30px;
+  height: 30px;
+}
